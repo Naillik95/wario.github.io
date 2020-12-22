@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="images/Wariofav.png" />
+
+
+    <!-- CSS Style sheets applied-->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Wario Coding</title>
+</head>
+
+<body>
+
+    <div class="img-bg"></div>
+
+    <nav role="navigation">
+        <ul>
+            <li>
+                <a class="drop" href="index.html" class="accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="download.html">Téléchargement</a>
+            </li>
+            <li>
+                <a href="team.html">L'équipe</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="panier"> <i class="fas fa-shopping-basket"></i> <span class="compteur"> 0</span> </a>
+            </li>
+        </ul>
+        <ul class="nav-brand">
+            <li><img class="wariologo" src="images/wariologo.png" alt="" title="Clique sur moi !"> Coding</li>
+        </ul>
+    </nav>
+
+    <div class="presentation-container">
+
+        <div class="presentation-image"><img src="images/cb0.gif" alt=""></div>
+
+        <div class="presentation-texte">
+            <h1>Apprenez à coder en vous amusant avec Wario !</h1>
+            <p>
+                Wario Coding est un jeu où vous apprendrez les bases du développement informatique en vous amusant. <br> Plus de 400 mini-jeux délirants et un mode aventure au niveau adapté par une I.A pour tous les niveaux.
+                <br> Le mode multi-joueur local ou en ligne vous permettra de vous affronter avec vos proches ou les joueurs mondiaux. La démo jouable est disponible à la page de <a href="download.html"> Téléchargement</a> . <br> Jeu disponible courant
+                2021 sur Switch, Smartphone et PC . <br> Vous pouvez précommander le jeu en cliquant sur <a id="myBtn" href="#"> +<i
+                        class="fas fa-shopping-basket"></i></a> .
+
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span> Nom : <input type="text" placeholder="Type something..." id="myName"><br> Âge : <input type="text" placeholder="Type something..." id="myAge"><br> Courriel : <input type="text" placeholder="Type something..."
+                id="myMail"><br>
+            <button type="button" onclick="getInputValue();">Let's Go</button>
+
+        </div>
+
+    </div>
+
+    <div id="myPanierModal" class="panier-modal">
+
+        <!-- Modal content -->
+        <div class="panier-modal-content">
+            <div class="panier-modal-header">
+                <span class="panier-close">&times;</span>
+                <h2>Panier</h2>
+            </div>
+            <div class="panier-modal-body">
+                <p>Contenu du Panier :</p>
+
+            </div>
+            <div class="panier-modal-footer">
+                <h3>Wario Coding</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>
+            © Coding Factory & Nintendo, 2020 - Tous droits réservés.
+        </p>
+    </div>
+
+    <!--Link JavaScript-->
+
+    <script src="JavaScript/index.js"></script>
+    <script src="https://kit.fontawesome.com/8e17a72730.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

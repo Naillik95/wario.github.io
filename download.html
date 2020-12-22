@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/Wariofav.png" />
+
+    <!-- CSS Style sheets applied-->
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/download.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Téléchargement</title>
+</head>
+
+<body>
+    <div class="img-bg"></div>
+
+    <nav role="navigation">
+        <ul>
+            <li>
+                <a href="index.html" class="accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="download.html">Téléchargement</a>
+            </li>
+            <li>
+                <a href="team.html">L'équipe</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav-brand">
+            <li><img class="wariologo" src="images/wariologo.png" alt=""> Coding</li>
+        </ul>
+    </nav>
+
+    <div class="screen" id="before">
+        <img src="images/wario.png" class="image-right">
+
+        <div class="dl-container">
+            <p>Vous voulez télécharger Wario Coding?<br>Il vous faudra d'abord passer cette épreuve!</p>
+
+            <a href="#" class="animated-button1 play-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Jouer
+            </a>
+        </div>
+    </div>
+
+    <div id="win">
+        <img src="images/perfect.gif" class="image-right">
+
+        <div class="dl-container">
+            <p>Bien jouer!</p>
+            <p>Vous pouvez maintenant télécharger <b>Wario&nbsp;Coding!</b></p>
+
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="animated-button1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Télécharger
+            </a>
+            <a href="#" class="animated-button1 play-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Rejouer
+            </a>
+        </div>
+    </div>
+
+    <div id="game-over">
+        <div class="dl-container">
+            <p><img src="images/game-over.gif"></p>
+
+            <a href="#" class="animated-button1 play-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Rejouer
+            </a>
+        </div>
+    </div>
+
+    <div id="modal-snake">
+        <div class="btn btn-two close-button">
+            <span>Fermer</span>
+        </div>
+        <div id="snake-scene">
+            <!-- Si la taille des canevas doit être modifier, il faut également la modifier dans le css -->
+            <canvas height="595" width="595">Oops, votre navigateur ne supporte pas les canvas</canvas>
+            <canvas height="595" width="595"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            © Coding Factory, 2020 - Tous droits réservés.
+        </p>
+    </div>
+
+    <!--Link JavaScript-->
+
+    <script src="JavaScript/download.js" type="module"></script>
+</body>
+
+</html>

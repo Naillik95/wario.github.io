@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=VT323&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: ivory;
+    font-family: "Inter", sans-serif;
+}
+
+
+/* Background*/
+
+.img-bg {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+/* Navbar */
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: relative;
+    background-color: rgb(231, 205, 56);
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: 2rem 1.5rem;
+}
+
+li a {
+    color: ivory;
+    font-size: 1.2rem;
+    clear: both;
+    width: 100%;
+}
+
+li a:hover {
+    color: #6f0e83;
+}
+
+.accueil {
+    font-weight: bold;
+}
+
+.nav-brand li {
+    font-size: 3rem;
+    padding: 0.9rem 1.5rem 0;
+    font-family: 'VT323', monospace;
+}
+
+.nav-brand li:hover {
+    cursor: pointer;
+}
+
+.nav-brand img {
+    width: 100px;
+}
+
+.nav-brand img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.fontFamily {
+    font-family: 'VT323', monospace;
+    font-size: 200%;
+    color: #f5cd1c;
+}
+
+.fontFamily2 {
+    font-family: 'VT323', monospace;
+    font-size: 150%;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+/* Présentation Section */
+
+.presentation-container {
+    position: absolute;
+    background-color: rgba(54, 52, 52, 0.808);
+    top: 15%;
+    left: 5%;
+    height: 80%;
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.presentation-image {
+    margin: 40px;
+}
+
+.presentation-image img {
+    border-radius: 5px;
+}
+
+.presentation-texte {
+    margin: 40px;
+}
+
+.presentation-texte h1 {
+    padding: 20px;
+}
+
+.presentation-texte {
+    line-height: 40px;
+}
+
+.presentation-texte a {
+    color: yellow;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.containerTeam {
+    display: flex;
+    flex-direction: row;
+}
+
+.equart {
+    padding-left: 150px;
+    margin-left: -3%;
+}
+
+.textCenter {
+    text-align: center;
+    font-family: 'VT323', monospace;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: rgba(54, 52, 52, 0.938);
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    line-height: 40px;
+}
+
+.modal-button {
+    text-align: center;
+    background-color: #6f0e83;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.modal-button:hover {
+    background-color: #a23fb6;
+    cursor: pointer;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #6f0e83;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* PANIER MODAL */
+
+
+/* The Modal (background) */
+
+.panier-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+
+/* Modal Content */
+
+.panier-modal-content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+
+/* The Close Button */
+
+.panier-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.panier-close:hover,
+.panier-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.panier-modal-header {
+    padding: 2px 16px;
+    background-color: #6f0e83;
+    color: white;
+}
+
+.panier-modal-body {
+    padding: 10px 16px;
+    background-color: rgb(231, 205, 56);
+    font-size: xx-large;
+}
+
+.preco-user {
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 20px;
+    cursor: pointer;
+    color: ivory;
+    background-color: #6f0e83;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+.preco-user:hover {
+    color: yellow;
+}
+
+.panier-modal-footer {
+    padding: 2px 16px;
+    background-color: #6f0e83;
+    color: white;
+    text-align: right;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6f0e83;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/* Mobile */
+
+@media (max-width:900px) {
+    nav {
+        justify-content: space-around;
+    }
+    li {
+        padding: 1rem 0.6rem;
+    }
+    li a {
+        font-size: 1rem;
+    }
+    .nav-brand {
+        display: none;
+    }
+    .presentation-block {
+        top: 10%;
+        height: 85%;
+    }
+}
+
+
+/*Images*/
+
+#img {
+    height: 5em;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.test {
+    justify-content: space-around;
+}
+
+.marginTop {
+    margin-top: 6px;
+}
+
+.Alea:hover {
+    color: yellow;
+    cursor: pointer;
+}
